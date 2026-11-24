@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaime Munoz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("Dfp3kHNwXONU0kcgL");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="portfolio-background">
+    <div class="binary-rain" aria-hidden="true">
+      <div class="binary-rain__columns"></div>
+    </div>
+  
+
+  <section id="landing-page">
+    
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/logo-jvmie.PNG" alt="Jaime Munoz">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "
+          data-en="About"
+          data-es="Sobre mí"
+          >
+          About
+        </a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" 
+            class="
+              nav__link--anchor
+              link__hover-effect
+              link__hover-effect--black
+            "
+            data-en="Projects"
+            data-es="Proyectos"
+          >
+          
+          Projects
+        </a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "
+          data-en="Contact"
+          data-es="Contacto"
+
+          >
+          Contact
+        </a>
+        </li>
+
+      <li class="nav__link">
+        <button
+        type="button"
+        class="language-toggle click"
+        aria-label="Switch to Spanish"
+        onclick="toggleLanguage()"
+        >
+          ES
+        </button>
+      </li>   
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 
+          class="title"
+          data-en="Hey, I'm Jaime"
+          data-es="Hola, soy Jaime"
+        >
+
+          Hey, I'm Jaime
+        </h1>
+        <!-- <h1 class="title orange">I'm Jaime.</h1> -->
+        <h2 
+
+          class="header__subtitle"
+          data-en="Frontend Developer · Creative Director"
+          data-es="Desarrollador Frontend · Director Creativo"
+        >
+
+          Frontend Developer · Creative Director
+
+        </h2>
+
+
+        <p class="header__para">
+          <span
+            data-en="Here's a bit more"
+            data-es="Conoce un poco más"
+          >Here's a bit more</span>
+          <b
+            class="orange click"
+            onclick="toggleModal()"
+            data-en="about me"
+            data-es="sobre mí"
+          >about me</b>
+
+          <!-- Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>. -->
+        </p>
+        <div class="social__list">
+          <a 
+            href="https://www.linkedin.com/in/jaime-munoz-8643561bb/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a 
+            href="https://github.com/jaimemunozd"
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a 
+            href="./assets/Jaime_Munoz_Resume.pdf"
+            data-href-en="./assets/Jaime_Munoz_Resume.pdf"
+            data-href-es="./assets/Jaime_Munoz_Resume_ES.pdf"      
+
+            target="_blank" 
+            rel="noopener noreferrer"   
+            class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about"
+            data-en="Here's a bit more about me"
+            data-es="Un poco sobre mí"
+        >
+        
+          Here's a bit about me.
+        </h3>
+
+        <h4 
+          class="modal__sub-title modal__sub-title--about"
+          data-en="Frontend Developer."
+          data-es="Desarrollador Frontend."          
+          >
+            Frontend Developer.
+        </h4>
+
+        <p class="modal__para">
+          <span data-en="I'm a" data-es="Soy">I'm a</span>
+          <b
+            class="orange"
+            data-en="Frontend Developer"
+            data-es="Desarrollador Frontend"
+          >Frontend Developer</b>
+          <span
+            data-en="based in Miami, with a background in"
+            data-es="establecido en Miami, con experiencia en"
+          >based in Miami, with a background in</span>
+          <b
+            class="orange"
+            data-en="creative direction"
+            data-es="dirección creativa"
+          >creative direction</b><span
+            data-en=", design, and entrepreneurship."
+            data-es=", diseño y emprendimiento."
+          >, design, and entrepreneurship.</span>
+
+          <br><br>
+
+          <span data-en="I bring" data-es="Combino">I bring</span>
+          <b
+            class="orange"
+            data-en="creativity"
+            data-es="creatividad"
+          >creativity</b>
+          <span data-en="and" data-es="y">and</span>
+          <b
+            class="orange"
+            data-en="technical problem-solving"
+            data-es="resolución de problemas técnicos"
+          >technical problem-solving</b>
+          <span
+            data-en="together to build intuitive, responsive digital experiences. My approach connects thoughtful design, clean code, and business goals to turn ideas into practical solutions."
+            data-es="para crear experiencias digitales intuitivas y adaptables a distintos dispositivos. Mi enfoque conecta un diseño cuidado, código limpio y objetivos de negocio para convertir ideas en soluciones prácticas."
+          >together to build intuitive, responsive digital experiences. My approach connects thoughtful design, clean code, and business goals to turn ideas into practical solutions.</span>
+        </p>
+        <div class="modal__languages">
+
+          <figure class="modal__language">
+            <img
+              class="modal--language--img"
+              src="./assets/html5.svg"
+              alt="HTML5"
+              aria-hidden="true"
+            ></i>
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+            <span class="language__name">TypeScript</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://mobx.js.org/img/mobx.png" alt="">
+            <span class="language__name">MobX</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
+            <span class="language__name">Vue</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
+            <span class="language__name">Nuxt</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 
+          class="modal__title modal__title--contact"
+          data-en="Let's connect."
+          data-es="Conectemos."    
+        
+        >
+          Let's connect.
+        </h3>
+
+        <h3 
+          class="modal__sub-title modal__sub-title--contact"
+          data-en="Our next step starts here."
+          data-es="Nuestro proximo paso empieza aquí."          
+        >
+            Our next step starts here.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label 
+              class="form__item--label"
+              data-en="Name"
+              data-es="Nombre"  
+              
+            >Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label 
+              class="form__item--label"
+              data-en="Email"
+              data-es="Correo electrónico"       
+              
+            >Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label 
+              class="form__item--label"
+              data-en="Message"
+              data-es="Mensaje"
+              
+            >Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button 
+            id="contact__submit" 
+            class="form__submit"
+            type="submit"
+            data-en="Send message"
+            data-es="Enviar mensaje"            
+            
+          >
+            Send message
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner" aria-hidden="true"></i>
+          <p data-en="Sending your message…" data-es="Enviando tu mensaje…">
+            Sending your message…
+          </p>
+        </div>
+        <div 
+          class="modal__overlay modal__overlay--success"
+          data-en="Congratulations on taking your first step toward building your global online presence."
+          data-es="Felicitaciones por dar el primer paso para construir tu presencia digital mundial."          
+          
+        >
+          Congratulations on taking your first step toward building your global online presence.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          <span
+            data-en="Selected"
+            data-es="Proyectos"          
+          >Selected</span> 
+          <span
+            class="orange"
+            data-en="Projects"
+            data-es="Destacados"            
+            
+          >Projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img
+                src="./assets/la-minuta-landing.PNG"
+                class="project__img"
+                alt="La Minuta restaurant website"
+                loading="lazy"
+              >
+
+              <div class="project__wrapper--bg"></div>
+
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  La Minuta
+                </h3>
+
+                <h4 class="project__description--sub-title">
+                  HTML · CSS · JavaScript
+                </h4>
+
+                <p
+                  class="project__description--para"
+                  data-en="A bilingual website for a Latin restaurant in North Miami Beach, featuring its menu, daily specials, and market products. Designed to help customers explore the restaurant and easily find directions or get in touch."
+                  data-es="Sitio web bilingüe para un restaurante latino en North Miami Beach, con menú, especiales del día y productos de su despensa. Diseñado para que los clientes descubran el restaurante, encuentren cómo llegar y se comuniquen fácilmente."
+                >
+                  A bilingual website for a Latin restaurant in North Miami Beach,
+                  featuring its menu, daily specials, and market products.
+                  Designed to help customers explore the restaurant and easily
+                  find directions or get in touch.
+                </p>
+
+                <div class="project__description--links">
+                  <a
+                    href="https://laminutacarneasada.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__description--link"
+                  >
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                    <span
+                      data-en="Visit website"
+                      data-es="Visitar sitio"
+                    >Visit website</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/logo-jvmie.PNG" class="footer__logo--img" alt="Jaime Munoz">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/jaimemunozd" 
+          rel="noopener noreferrer"
+          class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/jaime-munoz-8643561bb/" target="_blank" 
+          rel="noopener noreferrer"
+          class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a 
+            href="#" 
+            onclick="toggleModal()" 
+            class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white"
+            data-en="Contact"
+            data-es="Contacto"
+          >
+            Contact
+          </a>
+          <a 
+            href="./assets/Jaime_Munoz_Resume.pdf"
+            data-href-en="./assets/Jaime_Munoz_Resume.pdf"
+            data-href-es="./assets/Jaime_Munoz_Resume_ES.pdf"
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="
+              footer__social--link
+              link__hover-effect
+              link__hover-effect--white"
+            data-en="Resume"
+            data-es="Hoja de vida"
+          >
+            Resume
+          </a>
+        </div>
+        <div 
+          class="footer__copyright"
+          data-en="© 2026 Jaime Muñoz. All rights reserved."
+          data-es="© 2026 Jaime Muñoz. Todos los derechos reservados."       
+        
+        >
+        
+        Copyright &copy; 2026 Jaime Muñoz. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
