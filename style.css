@@ -383,7 +383,7 @@ nav {
 }
 
 .nav__link {
-  margin: 0 12px;
+  margin: 0;
 }
 
 .nav__link--anchor {
@@ -999,6 +999,7 @@ footer {
 
 #landing-page .nav__link--list {
   margin-left: auto;
+  gap: 40px;
 }
 
 #landing-page nav {
@@ -1030,6 +1031,10 @@ footer {
   .modal__half {
     width: 100%;
   }
+
+  .modal--open #projects {
+    visibility: hidden;
+  }
 }
 
 /* Small phones */
@@ -1040,9 +1045,9 @@ footer {
   .header__para {
     font-size: 18px;
   }
-  .nav__link:first-child {
+  /* .nav__link:first-child {
     display: none;
-  }
+  } */
   .project__description--para {
     display: none;
   }
@@ -1090,5 +1095,14 @@ footer {
   #landing-page h2.header__subtitle {
     font-size: clamp(12px, 4.2vw, 17px);
     white-space: nowrap;
+  }
+
+  #landing-page h1.title {
+    font-size: min(44px, 10vw);
+    white-space: nowrap;
+  }
+
+  #landing-page .nav__link--list {
+    gap: 20px;
   }
 }
