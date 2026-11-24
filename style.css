@@ -9,6 +9,11 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #05070b;
+}
+
+body {
+  background-color: #05070b;
 }
 
 li {
@@ -183,6 +188,7 @@ nav,
   position: relative;
   min-height: 100vh;
   background: transparent;
+  padding-top: env(safe-area-inset-top, 0px);
   /* overflow: hidden; */
   /* isolation: isolate; */
 }
