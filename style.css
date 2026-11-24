@@ -1081,4 +1081,8 @@ footer {
     max-width: 320px;
     font-size: 14px;
   }
+  #landing-page h2.header__subtitle {
+    font-size: clamp(12px, 4.2vw, 17px);
+    white-space: nowrap;
+  }
 }
